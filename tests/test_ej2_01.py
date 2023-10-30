@@ -1,5 +1,5 @@
 import pytest
-from EjerciciosU2.ej2_01 import pedirEdad, mayorEdad
+from src.ej2_01 import pedirEdad, mayorEdad
 
 @pytest.mark.parametrize(
     "input_n, expected",
@@ -32,3 +32,26 @@ def test_pedirEdad(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: "100")
     result = pedirEdad()
     assert result == 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
