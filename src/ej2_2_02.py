@@ -2,15 +2,24 @@
 
 def pedirEdad(edad):
     cont = 1
+    resultado = ""
  
-    while cont < 125:
-        cont += 1
-    return edad
+    while cont <= edad:
+        resultado = resultado + (f"{cont}   ")
+        cont = cont + 1
+    return resultado
+
+
     
 
 def main():
-    edad = input("Teclee su edad: ")
-    print(pedirEdad(edad))
+    edad = int(input("Teclee su edad: "))
+    fin = pedirEdad(edad)
+    print(fin)
+
+    
+
+
 
 if __name__ == "__main__":
     main()
